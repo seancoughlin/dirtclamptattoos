@@ -14,11 +14,13 @@
 		a:visited{
 			color: #ff8cc1;
 		}
+
 		h1 {text-align: center;}
 		p {text-align: center;}
-		div {text-align: center; 
+		div {position: center;
+			text-align: center; 
 			color: White;
-			padding: 100px;}
+		}
 
 			footer {
 		padding: 50px;
@@ -37,7 +39,7 @@
 		</p>
 
 		<div>
-			  <form target="_blank" action="https://formsubmit.co/4ec7d670481b8b36270edeacae6da559" method="POST" enctype="multipart/form-data">
+			<form method="POST" action="https://formsubmit.co/4ec7d670481b8b36270edeacae6da559" enctype="multipart/form-data">
 
 				Pretty <strong>please read this</strong> before booking!
 				<br> 
@@ -75,12 +77,26 @@
 				</label>
 				<br>
 				<br>
-				<input type="text" id="When1" name="When1" value="1. (Month/Day/Year) @ 00:00AM/PM" required><br>
-				<br>
-				<input type="text" id="When2" name="When2" value="2. (Month/Day/Year) @ 00:00AM/PM" required>
-				<br>
-				<br>
-				<input type="text" id="When3" name="When3" value="3. (Month/Day/Year) @ 00:00AM/PM" required>
+
+				<!-- center align the badge widget-->
+				<style type="text/css">
+					.calendly-inline-widget { 
+						left: 50% !important; 
+						margin-left: -250px!important; 
+					}
+				</style>
+				<!--end center align the badge widget-->
+
+				<!-- Calendly inline widget begin -->
+
+				<div class="calendly-inline-widget" data-url="https://calendly.com/timetewtattew/30min?hide_event_type_details=1&hide_gdpr_banner=1" style="max-width: 500px; height:500px;">
+				</div>
+
+				<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async>
+				</script>
+
+				<!-- Calendly inline widget end -->
+
 				<br>
 				<br>
 				<label for="questions">Do you have any questions? 
