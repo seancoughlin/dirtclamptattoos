@@ -37,7 +37,7 @@
 		</p>
 
 		<div>
-				<form method="POST" action="https://formsubmit.co/4ec7d670481b8b36270edeacae6da559" enctype="multipart/form-data">
+			  <form target="_blank" action="https://formsubmit.co/4ec7d670481b8b36270edeacae6da559" method="POST" enctype="multipart/form-data">
 
 				Pretty <strong>please read this</strong> before booking!
 				<br> 
@@ -59,9 +59,13 @@
 				<br>
 				<label for="Upload">Upload a photo of the design(s) you're interested in!</label><br>
 				<br>
-				<input type="file" id="myFile" name="fileName" accept="image/png, image/jpeg" required>
-				<input type="file" id="myFile" name="fileName">
-				<input type="file" id="myFile" name="fileName">
+
+				<input type="file" class="attachment" onchange="readURL(this)" id="myFile" name="attachment" accept="image*" required>
+
+				<input type="file" class="attachment" onchange="readURL(this)" id="myFile" name="attachment" accept="image/png, image/jpeg">
+
+				<input type="file" class="attachment" onchange="readURL(this)" id="myFile" name="attachment" accept="image/png, image/jpeg">
+
 				<br>
 				<br>
 				<label for="When1">When works for you? <br> Please give me three dates and times!
