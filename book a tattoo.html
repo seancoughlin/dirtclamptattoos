@@ -39,7 +39,7 @@
 		</p>
 
 		<div>
-			<form method="POST" action="https://formsubmit.co/4ec7d670481b8b36270edeacae6da559" enctype="multipart/form-data">
+			<form action="https://formsubmit.co/4ec7d670481b8b36270edeacae6da559" enctype="multipart/form-data" method="POST">
 
 				Pretty <strong>please read this</strong> before booking!
 				<br> 
@@ -55,26 +55,37 @@
 				thanks!!!
 				<br>
 				<br>
+
 				<label for="fullname">First and Last Name*</label><br>
-				<input type="text" id="fullname" name="fullname" value="" required><br>
+				
+				<input type="text" id="fullname" name="fullname" value="" required>
+
 				<br>
+				<br>
+				
 				<label for="pronouns">What are your pronouns?*</label><br>
+				
 				<input type="text" id="pronouns" name="pronouns" value="" required>
+			
 				<br>
 				<br>
+				
 				<label for="Upload">Upload a photo of the design(s) you're interested in!*
-					<br>
-					flash can be found <a href="flash.html" target="self">here</a>
-					<br>
-					or on <a href="https://www.instagram.com/dirtclamp/" target="self"> my instagram highlights!</a>
-				</label><br>
+				<br>
+				flash can be found <a href="flash.html" target="self">here</a>
+				<br>
+				or on 
+				<a href="https://www.instagram.com/dirtclamp/" target="self"> my instagram highlights!</a>
+				</label>
+				
+				<br>
 				<br>
 
-				<input type="file" class="attachment" onchange="readURL(this)" id="myFile" name="attachment" accept="image*" required>
+				<input type="file" name="fileToUpload" id="fileToUpload" required>
 
-				<input type="file" class="attachment" onchange="readURL(this)" id="myFile" name="attachment" accept="image/png, image/jpeg">
+				<input type="file" name="fileToUpload" id="fileToUpload" required>
 
-				<input type="file" class="attachment" onchange="readURL(this)" id="myFile" name="attachment" accept="image/png, image/jpeg">
+				<input type="file" name="fileToUpload" id="fileToUpload" required>
 
 				<br>
 				<br>
